@@ -1,0 +1,17 @@
+h1,h2{/*esto es un selector de etiqueta*/
+  color: #757575;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.paragraph{/*esto es un selector de clase*/
+  background-color: #BDBDBD;
+  color: #757575;
+  height: 150px;
+}
+
+span p{/*Seleccionando un elemneto de etiqueta dentro de otro elemento de etiqueta*/
+  background-color: #eeeeee;
+  color: #424242;
+  height:100px;
+}
