@@ -1,7 +1,33 @@
-h1,h2{/*esto es un selector de etiqueta*/
+/*Selectores de etiquetas*/
+a[href="www.codigofacilito.com"]{/*selectores de etiquetas con atributos*/
+  color: green;
+}
+
+a[class="otrocolor"]{
+  color: purple;
+}
+h1{/*esto es un selector de etiqueta*/
   color: #757575;
   text-align: center;
   text-transform: capitalize;
+}
+
+span p{/*Seleccionando un elemneto de etiqueta dentro de otro elemento de etiqueta*/
+  background-color: #eeeeee;
+  color: #424242;
+  height:100px;
+}
+/*Selectores de clases*/
+h2.paragraph{
+  background-color: purple;
+  text-align: center;
+  height: 80px;
+}
+
+.lista{
+  list-style: none;
+  padding: 0px;
+  margin-left: 0px;
 }
 
 .paragraph{/*esto es un selector de clase*/
@@ -10,8 +36,22 @@ h1,h2{/*esto es un selector de etiqueta*/
   height: 150px;
 }
 
-span p{/*Seleccionando un elemneto de etiqueta dentro de otro elemento de etiqueta*/
-  background-color: #eeeeee;
+/*Slectores de id*/
+#colores >ul>li{/*selector por Id es unico para cada elemento*/
+  background-color: #8BC34A;
   color: #424242;
-  height:100px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+#red{
+  color:red !important;
+}
+
+#yellow{
+  color:yellow;
+}
+
+#blue{
+  color:blue;
 }

@@ -1,0 +1,446 @@
+/* a:link{
+    color: green;
+}
+
+a:visited{
+  font-size:2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color:blue;
+}
+
+a:active{
+  color:black;
+} */
+
+body{
+  font-size: 100%;
+  margin:0;
+  background-color: #eee;
+}
+
+.container{
+  height: 200px;
+  border: 1px solid red;
+  position: relative;
+
+}
+
+.cubo{
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  transition: width 2s, height 2s, transform 4s;
+  /* transition-timing-function: ease; */
+  /* transition-timing-function: ease-in; */
+  /* transition-timing-function: ease-out; */
+  transition-timing-function: ease-in-out;
+}
+
+div.cubo:hover{
+  height: 300px;
+  width: 300px;
+  transform: rotate(180deg);
+  animation-name: ejemplo;
+  animation-duration: 4s;
+  animation-delay: 1s;
+}
+
+/* @keyframes ejemplo { */
+  /* from{
+    background-color: red;
+  }
+  to{
+    background-color: yellow;
+
+  }*/
+  /* 0%{background-color: green}
+  25%{background-color: yellow}
+  50%{background-color: blue}
+  100%{background-color: purple}
+} */
+
+/* @keyframes rotate {
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+} */
+
+/* .ejercicios{
+  position: relative;
+  background: url("../image/outdoor.jpg") 0 / cover fixed;
+  width: 100%;
+  height: 500px;
+} */
+
+.content{
+  position: absolute;
+  border-radius: 10px;
+  background-color: hsla(120,20%,100%,0.6);
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.8);
+  top: 15%; bottom: 15%; left: 10%; right: 10%;
+  filter: blur(2px);
+}
+
+.textopara{
+  top: 40%; bottom: 40%; left: 40%; right: 40%;
+  position: absolute;
+}
+
+h1,h2{
+  background-color: hsl(112, 49%, 73%);
+  color: white;
+  border: double hsl(192, 89%, 33%) 15px;
+  border-radius: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 2.5em;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;/*horizontal vertical desenfoque color*/
+}
+
+.dog{
+  margin 5px 10px 5px 10px;
+  /* height: 150px;
+  width: 250px; */
+  /*position: relative;*/
+  border-radius: 10px;
+}
+
+.homero{
+  /* height: 200px;
+  width: 300px; */
+  border: double 3px red;
+  border-radius: 30% 25%;
+}
+
+
+
+.imgtxt{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+
+/* p:nth-child(2){
+  background-color: orange;
+} */
+
+/* p:nth-last-child(2){
+  background-color: orange;
+} */
+
+/* p:first-of-type{
+  background-color: purple;
+} */
+
+/* p:last-of-type{
+  background-color: green;
+} */
+
+/* p:nth-of-type(2){
+  background-color: pink;
+} */
+
+/* p:nth-last-of-type(2){
+  background-color: cyan;
+} */
+
+/* p:nth-of-type(even){ selecciona pares
+  background-color: green;
+} */
+
+/* .parrafoespecial::first-line{
+  color: red;
+  font-size: 2em;
+} */
+
+/* .parrafoespecial::before{
+  content: url("../image/icovoslkwagen.jpg");
+  color: red;
+  font-size: 2em;
+} */
+
+/* .parrafoespecial::first-letter{
+  color: red;
+  font-size: 2em;
+} */
+/* .parrafoespecial::after{
+  content: url("../image/icovoslkwagen.jpg");
+  color: red;
+  font-size: 2em;
+} */
+
+.parrafoespecial::selection{
+  color: red;
+  background-color: yellow;
+}
+
+/* p:nth-of-type(odd){ señecciona impares
+  background-color: green;
+}
+
+p:empty{
+  width:10px;
+  height: 10px;
+  background-color: red; */
+}
+
+p{
+  white-space: pre-line;/*manejo de espacios en blancos en parrafos y saltos de lineas*/
+  word-spacing: 3px; /*maneja el espacio entre palabras*/
+}
+
+.responsive{
+  height: auto;
+}
+
+.title{
+  position: fixed;
+  /*top: 0;
+  left: 33%;
+  right: 33;*/
+}
+
+.title-absolute{
+  /*position:absolute*/
+  width: 50%;
+  margin: auto;
+}
+.texto{
+  text-align: center;
+}
+
+.polaroid img{
+  /* opacity: 0.5; */
+  /* filter: blur(5px); */
+  /* filter: brightness(0.3); */
+  /* filter: contrast(3); */
+  /* filter:grayscale(1); */
+  /* filter: hue-rotate(180deg); */
+  /* filter: invert(0.2); */
+  /* filter: saturate(0.2); */
+    filter: sepia(0.2);
+}
+
+.polaroid img:hover{
+  cursor: pointer;
+  /* opacity: 1; */
+  /* filter: blur(0); */
+  /* filter: brightness(1); */
+  /* filter: contrast(1.2); */
+  /* filter: grayscale(0.2); */
+  /* filter: hue-rotate(360deg); */
+  /* filter: invert(1); */
+  /* filter: saturate(1); */
+  filter: sepia(1);
+}
+
+/* Start Nav Bar */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  width: 100%;
+  height: auto;
+  padding-bottom: 75px;
+}
+
+nav{
+  background-color: gray;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+nav ul{
+  margin-right: 50px;
+}
+
+nav ul li{
+  margin: 20px;
+  float: right;
+  display: inline;
+}
+
+li a{
+  font-size: 1em;
+  color: black;
+  text-decoration: none;
+}
+
+.logo_space{
+  float: left;
+  padding: 1em;
+  width: 30%;
+}
+
+.logo{
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.iconNav{
+  cursor: pointer;
+  font-size: 1.5em;
+  display: block;
+  margin: 20px;
+  float: right;
+}
+
+.show{
+  display: block;
+  float: none;
+}
+/* end Nav Bar */
+
+.modal{
+  display: none;
+  position: fixed;
+  padding-top: 60px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;/*Para mantenerlo arriba de todo*/
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content{
+  margin:auto;
+  display: block;
+  width: 80%;
+  max-width: 600px;
+  animation: zoom 1.5s;
+}
+
+.cerrar{
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+div.polaroid{
+  background-color: white;
+  position: relative;
+  padding: 10px;
+  /* margin: auto; */
+  margin: 10px 0 25px 0;
+  box-shadow: 5px 5px 10px rgb(0,0,0,0.5);
+  /* display:block; */
+  /* transition: transform 1s;
+  transition-delay: 0.5s;
+  animation: rotate 4s infinite alternate; */
+  /* animation-name: skew;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 1s;
+  animation-timing-function: ease-in; */
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+div.polaroid:hover{
+  /* transform: translate(50px,100px);/*posicion x,posicion y */
+  /* transform: translateX(50px); */
+  /* transform: translateY(15px); */
+  /* transform: rotate(180deg); */
+  /*transform: scale(1.5,1.5); tamaño en x ,tamaño en y */
+  /* transform: skew(-20deg); */
+}
+
+/*.border{
+  border: solid green 5px;
+  border-radius: 10px;
+}*/
+
+/* .thumb{
+  margin:10px;
+  border: 3px solid gray;
+  width: 150px;
+}
+
+.thumb:hover{
+  box-shadow: 0 0 2px 1px rgba(0,140,186,0.8);
+  width: 200px;
+  cursor: pointer;
+} */
+
+@keyframes zoom {
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+ @media screen and (max-width:480px) { /*iphone4 */
+
+
+   /* body{
+      background-color:yellow;
+   }
+   .homero{
+     display: none;
+   }
+
+   .cubo{
+     display: none;
+   } */
+
+}
+
+@media screen and (max-width:480px) {
+  nav ul li{
+    display: none;
+  }
+  .logo_space{
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width:760px){ /*phablet y tablet */
+  /* body{
+    background-color:blue;
+    } */
+nav ul li{
+  display: none;
+}
+
+.logo_space{
+  width: 80%;
+}
+
+}
+
+@media screen and (min-width:761px) {
+  /* body{
+    background-color:#eee;
+
+  } */
+  div.polaroid{
+    display: inline-block;
+    margin-left: 6%;
+  }
+  img{
+    width: 300px;
+  }
+  .iconNav{
+    display: none;
+  }
+}

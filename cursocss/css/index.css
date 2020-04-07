@@ -1,0 +1,57 @@
+div{
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-flow: row wrap; */
+  flex-flow: row wrap;
+  justify-content: center;
+  height: 600px;
+  background-color: #f5f5f5f5;
+  /*justify-content: flex-start;Alineación en eje principal*/
+  /* justify-content: space-around; */
+  align-items: center;/*alineacion en el eje cruzado*/
+}
+
+button,p{
+  border: 0;
+  font-size: 1em;
+  outline: none;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  /*flex-grow: 1 2 500px;grow shrink alto/ancho dependiendo de la orientacion del flex*/
+  min-width: 600px;
+}
+
+button{
+  background-color: #eee;
+}
+
+button:nth-of-type(1){
+  background-color: #FF6759;
+  flex-grow: 2;
+}
+
+button:nth-of-type(2){
+  background-color: #F79256;
+  flex-grow: 3;
+}
+
+button:nth-of-type(3){
+  background-color: #047493;
+  flex-grow: : 4;
+}
+
+button:nth-of-type(4){
+  background-color: #512DA8;
+  flex-shrink: 2;
+  align-self: stretch;
+}
+
+p{
+  background-color: #2c3e50;
+  flex-shrink: 2;
+}
+
+/* .alineado{
+  background-color: #e67e22;
+} */

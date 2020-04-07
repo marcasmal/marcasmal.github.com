@@ -1,0 +1,27 @@
+h1{
+  text-align: center;
+  color: rgb(155,220,110);/*r=rojo;g=green,b=blue*/
+
+}
+
+h2,h3,p{
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
+.samplergba{
+  background-color: rgba(0,0,0,0.5);/*r=rojo;g=green;b=blue;a=canal alfa, usado para opacidad*/
+}
+
+.samplehsl{
+  background-color: hsl(180,50%,50%);/*h=matiz,s=saturacion,l=luminosidad*/
+}
+
+.samplehsla{
+  background-color: hsl(80,50%,50%,0.5);/*h=matiz,s=saturacion,l=luminosidad,a= canal alfa, usado para la opacidad*/
+}
+
+p{
+  text-transform: uppercase;
+}
